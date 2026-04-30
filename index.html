@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>San Kwon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #f9f8f6;
+      --text: #1c1c1c;
+      --muted: #888;
+      --serif: 'Libre Baskerville', Georgia, serif;
+      --mono: 'DM Mono', 'Courier New', monospace;
+    }
+
+    html {
+      font-size: 17px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--serif);
+      line-height: 1.75;
+      padding: 5rem 2rem 7rem;
+      max-width: 660px;
+      margin: 0 auto;
+      animation: fadeIn 0.5s ease both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.6rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .bio {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: #2a2a2a;
+    }
+
+    .bio em {
+      font-style: italic;
+    }
+
+    h2 {
+      font-family: var(--mono);
+      font-weight: 300;
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 0.6rem;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    ul li a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+      text-decoration-color: #c0bdb8;
+      transition: text-decoration-color 0.15s ease;
+    }
+
+    ul li a:hover {
+      text-decoration-color: var(--text);
+    }
+
+    .meta {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--muted);
+      margin-left: 0.2rem;
+    }
+
+    .contact {
+      margin-top: 3.5rem;
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      font-weight: 300;
+      color: var(--muted);
+      letter-spacing: 0.02em;
+    }
+
+    .contact a {
+      color: var(--muted);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: #ccc;
+      transition: color 0.15s ease, text-decoration-color 0.15s ease;
+    }
+
+    .contact a:hover {
+      color: var(--text);
+      text-decoration-color: var(--text);
+    }
+
+    @media (max-width: 480px) {
+      html { font-size: 15px; }
+      body { padding: 3rem 1.25rem 5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>San Kwon</h1>
+
+  <p class="bio">
+    San Kwon is a writer and critic based in Saigon, Vietnam, where he contributes to the digital
+    publication <em>Saigoneer</em>. In 2025, he graduated from Brown University with a BA in
+    Comparative Literature and Science, Technology, Society (STS). His honors thesis, on the
+    problematic of reading and ellipses, was awarded the Rosalie Colie Prize for best thesis in
+    Comparative Literature, an excerpt of which also received the Preston Gurney Prize for
+    Cultural Criticism.
+  </p>
+
+  <h2>Writing</h2>
+  <ul>
+    <li>
+      <a href="https://saigoneer.com/loạt-soạt-bookshelf/28879-book-review-making-a-whore-làm-đĩ-vũ-trọng-phụng" target="_blank" rel="noopener">
+        Review: <em>Making a Whore</em> by Vũ Trọng Phụng
+      </a>
+      <span class="meta">Saigoneer, Apr 2026</span>
+    </li>
+    <li>
+      <a href="https://saigoneer.com/saigon-news/28824-pristine-blue-sky-and-memorial-park-ruminating-on-what-the-covid-19-pandemic-left-us" target="_blank" rel="noopener">
+        Vignette: Saigon's New COVID-19 Memorial Park
+      </a>
+      <span class="meta">Saigoneer, Mar 2026</span>
+    </li>
+    <li>
+      <a href="https://saigoneer.com/vietnam-heritage/28801-from-quảng-nam-to-gwangju-confronting-the-bloody-history-of-south-korea-s-vietnam" target="_blank" rel="noopener">
+        Essay: Han Kang and the History of Korea's 'Vietnam'
+      </a>
+      <span class="meta">Saigoneer, Mar 2026</span>
+    </li>
+    <li>
+      <a href="https://saigoneer.com/saigon-music-art/28735-review-new-wave-documentary-is-a-surprisingly-personal-dissection-of-1980s-nostalgia" target="_blank" rel="noopener">
+        Review: <em>New Wave</em> Documentary
+      </a>
+      <span class="meta">Saigoneer, Feb 2026</span>
+    </li>
+    <li>
+      <a href="https://saigoneer.com/saigon-street-food-restaurants/28713-hẻm-gems-beloved-in-korea,-dwaeji-gukbap-is-a-hearty-soup-for-saigon-s-cold-days" target="_blank" rel="noopener">
+        Review: Subyeon Gukbap Restaurant, Thảo Điền
+      </a>
+      <span class="meta">Saigoneer, Feb 2026</span>
+    </li>
+    <li>
+      <a href="https://saigoneer.com/loạt-soạt-bookshelf/28678-viet-thanh-nguyen-s-new-essay-collection-is-both-theoretically-sharp-and-intimately-tender" target="_blank" rel="noopener">
+        Review: Viet Thanh Nguyen's <em>To Save and to Destroy</em>
+      </a>
+      <span class="meta">Saigoneer, Jan 2026</span>
+    </li>
+    <li>
+      <a href="https://repository.library.brown.edu/studio/item/bdr:cd63e8b9/" target="_blank" rel="noopener">
+        Undergraduate Thesis: "Reading Ellipses, Reading Elliptically"
+      </a>
+      <span class="meta">Brown University, May 2025</span>
+    </li>
+    <li>
+      <a href="https://www.browndailyherald.com/article/2025/02/kwon-25-kattler-27-takahashi-28-police-raids-on-homeless-encampments-are-cruel-and-inhumane" target="_blank" rel="noopener">
+        Op-Ed: Stop Police Raids on Homeless Encampments
+      </a>
+      <span class="meta">Brown Daily Herald, Feb 2025</span>
+    </li>
+  </ul>
+
+  <p class="contact">
+    contact — <a href="mailto:">email</a>
+  </p>
+
+</body>
+</html>
