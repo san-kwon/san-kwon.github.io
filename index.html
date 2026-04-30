@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>San Kwon</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -18,7 +18,7 @@
       --bg: #f9f8f6;
       --text: #1c1c1c;
       --muted: #888;
-      --serif: 'Libre Baskerville', Georgia, serif;
+      --serif: 'Crimson Pro', Georgia, serif;
       --mono: 'DM Mono', 'Courier New', monospace;
     }
 
@@ -30,9 +30,9 @@
       background: var(--bg);
       color: var(--text);
       font-family: var(--serif);
-      line-height: 1.75;
+      line-height: 1.9;
       padding: 5rem 2rem 7rem;
-      max-width: 660px;
+      max-width: 620px;
       margin: 0 auto;
       animation: fadeIn 0.5s ease both;
     }
@@ -43,21 +43,28 @@
     }
 
     h1 {
-      font-family: var(--serif);
-      font-weight: 700;
-      font-size: 1.6rem;
-      letter-spacing: -0.02em;
+      font-weight: 600;
+      font-size: 1.7rem;
+      letter-spacing: -0.015em;
       margin-bottom: 1.5rem;
     }
 
     .bio {
-      font-size: 0.95rem;
-      line-height: 1.85;
+      font-size: 0.97rem;
+      line-height: 1.9;
       color: #2a2a2a;
     }
 
     .bio em {
       font-style: italic;
+    }
+
+    .email {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 1rem;
+      letter-spacing: 0.02em;
     }
 
     h2 {
@@ -77,8 +84,8 @@
 
     ul li {
       margin-bottom: 0.6rem;
-      font-size: 0.93rem;
-      line-height: 1.65;
+      font-size: 0.94rem;
+      line-height: 1.7;
     }
 
     ul li a {
@@ -102,34 +109,13 @@
       margin-left: 0.2rem;
     }
 
-    .contact {
-      margin-top: 3.5rem;
-      font-family: var(--mono);
-      font-size: 0.75rem;
-      font-weight: 300;
-      color: var(--muted);
-      letter-spacing: 0.02em;
-    }
-
-    .contact a {
-      color: var(--muted);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      text-decoration-color: #ccc;
-      transition: color 0.15s ease, text-decoration-color 0.15s ease;
-    }
-
-    .contact a:hover {
-      color: var(--text);
-      text-decoration-color: var(--text);
-    }
-
     @media (max-width: 480px) {
       html { font-size: 15px; }
       body { padding: 3rem 1.25rem 5rem; }
     }
   </style>
 </head>
+
 <body>
 
   <h1>San Kwon</h1>
@@ -141,6 +127,10 @@
     problematic of reading and ellipses, was awarded the Rosalie Colie Prize for best thesis in
     Comparative Literature, an excerpt of which also received the Preston Gurney Prize for
     Cultural Criticism.
+  </p>
+
+  <p class="email">
+    sankwon21 [at] gmail [dot] com
   </p>
 
   <h2>Writing</h2>
@@ -194,10 +184,6 @@
       <span class="meta">Brown Daily Herald, Feb 2025</span>
     </li>
   </ul>
-
-  <p class="contact">
-    contact — <a href="mailto:">email</a>
-  </p>
 
 </body>
 </html>
